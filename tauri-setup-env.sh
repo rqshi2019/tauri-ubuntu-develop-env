@@ -16,6 +16,14 @@ sudo apt install libwebkit2gtk-4.0-dev \
 # install rust env
 curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf -o rustup.sh
 sh rustup.sh -y
+case ":${PATH}:" in
+    *:"$HOME/.cargo/bin":*)
+        ;;
+    *)
+        # Prepending path in case a system-installed nodejs needs to be overridden
+        echo "export PATH=$HOME/.cargo/bin:$PATH" >> $HOME/.bashrc
+        ;;
+esac
 
 rm -r rustup.sh
 
