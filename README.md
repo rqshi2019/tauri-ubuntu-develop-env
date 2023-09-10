@@ -1,4 +1,4 @@
-## Tauri development environment set up in Ubuntu
+## Tauri development environment set up on Ubuntu
 
 ## Installation Instructions
 This script is used on ubuntu server 22.04 lts, include `rust`, `nodejs` and some required compile tools.
