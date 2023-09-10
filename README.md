@@ -1,1 +1,1 @@
-# tauri-ubuntu-develop-env
+# Tauri development environment set up in Ubuntu
